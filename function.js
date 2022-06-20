@@ -40,3 +40,15 @@ function getitem(key){
     }
   
 }
+
+
+function index_number(target_val){
+    return index_val =target_val.parentElement.getAttribute('index');
+ 
+}
+
+
+function updatalsdat(key,array){
+     localStorage.setItem(key,JSON.stringify(array));
+
+}
