@@ -43,7 +43,7 @@ function getitem(key){
 
 
 function index_number(target_val){
-    return index_val =target_val.parentElement.getAttribute('index');
+    return index_val =target_val.getAttribute('index');
  
 }
 

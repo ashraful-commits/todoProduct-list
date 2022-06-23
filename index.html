@@ -11,44 +11,44 @@
     <title>Product</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container bg-light p-5">
         <div class="row my-5 d-flex justify-content-center">
             <div class="col-md-8">
-                <div class="card bg-warning shadow">
-                    <div class="card-header">
+                <div class="card bg-white shadow">
+                    <div class="card-header bg-primary">
                         <!-- add product  -->
-                        <a href="#modal_product" class="btn btn-dark w-100 text-white" data-bs-toggle="modal">Add Product</a>
+                        <h1 class="text-center text-white">STORE BOUCHCER</h1>
                         <!-- product form  -->
                         <!-- modal form  -->
                         <!-- add product modal  -->
                         <div class="modal fade" id="modal_product">
                             <div class="modal-dialog modal-dialog-center">
                                 <div class="modal-content">
-                                    <div class="modal-header bg-danger">
-                                        <h4 class="d-flex justify-content-between text-center">Upload Products</h4>
-                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                    <div class="modal-header bg-secondary">
+                                        <h4 class="d-flex justify-content-between text-center text-white">Buy Products</h4>
+                                        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="msg"></div>
                                         <form id="product_form">
                                             <div class="my-1">
-                                            <label for="">Product Image</label>
+                                            <label for=""><h6>Product Image</h6></label>
                                             <input class="form-control" type="text" value ="" name="image">
                                            </div>
                                             <div class="my-1">
-                                            <label for="">Product Name</label>
+                                            <label for=""><h6></h6>Name</h6></label>
                                             <input class="form-control" type="text" value ="" name="name">
                                            </div>
                                             <div class="my-1">
-                                            <label for="">Product Price</label>
+                                            <label for=""><h6></h6>Price</h6></label>
                                             <input class="form-control" type="text" value ="" name="price">
                                            </div>
                                             <div class="my-1">
-                                            <label for="">Product Quanity</label>
+                                            <label for=""><h6></h6>Quanity</h6></label>
                                             <input class="form-control" type="text" value ="" name="quantity">
                                            </div>
                                            <div class="my-1">
-                                            <button class="btn btn-danger w-100" type="submit">Submit</button>
+                                            <button class="btn btn-secondary w-100" type="submit"><h6>Buy</h6></button>
                                            </div>
                                         </form>
                                     </div>
@@ -59,9 +59,9 @@
                         <div class="modal fade" id="view_product">
                             <div class="modal-dialog modal-dialog-center">
                                 <div class="modal-content">
-                                    <div class="modal-header bg-primary">
+                                    <div class="modal-header bg-secondary">
                                         <h4 class="text-center text-white">View Products</h4>
-                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="msg"></div>
@@ -85,8 +85,8 @@
                             <div class="modal-dialog modal-dialog-center">
                                 <div class="modal-content">
                                     <div class="modal-header bg-warning">
-                                        <h4 class="d-flex justify-content-between">Edit Products</h4>
-                                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                                        <h4 class="d-flex justify-content-between text-white">Edit Products</h4>
+                                        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body">
                                         <div class="msg"></div>
@@ -100,12 +100,12 @@
 
                     </div>
                     <div class="card-body">
-
+                        <a href="#modal_product" class="btn btn-outline-secondary shadow-sm w-100 my-2" data-bs-toggle="modal"><h6>Add new product</h6></a>
                         <!-- product tabel  -->
-                        <div class="my-1">
-                            <table class="table table-borderedless table-dark">
-                                <thead class="thead-dark text-center"> 
-                                <tr>
+                        <div class="my-1 d-flex">
+                            <table class="table table-bordered table-striped table-hover shadow">
+                                <thead class="text-center bg-primary"> 
+                                <tr class="text-white">
                                     <th>Id.</th>
                                     <th>Image</th>
                                     <th>Name</th>
